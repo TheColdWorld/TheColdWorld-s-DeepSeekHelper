@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+	  <LangVersion>latest</LangVersion>
+	  <TargetFrameworks>netstandard2.1;net8.0;net9.0</TargetFrameworks>
+	  <AssemblyName>DeepSeekHelper</AssemblyName>
+	  <RootNamespace>TheColdWorld.DeepSeekHelper</RootNamespace>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	  <GenerateDocumentationFile>False</GenerateDocumentationFile>
+	  <SignAssembly>False</SignAssembly>
+	  <PackageId>TheColdWorld.DeepSeekHelper</PackageId>
+	  <Title>TheColdWorld's DeepSeekHelper</Title>
+	  <Version>1.0.0</Version>
+	  <Authors>TheColdWorld</Authors>
+	  <Company>None</Company>
+	  <Product>Simple DeepSeek API host</Product>
+	  <Copyright>© 2025 TheColdWorld</Copyright>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <IncludeSymbols>True</IncludeSymbols>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <WarningLevel>8</WarningLevel>
+	  <PublishAot>true</PublishAot>
+	  <IlcDisableReflection>true</IlcDisableReflection>
+	  <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+</PropertyGroup>
+
+
+
+	<ItemGroup>
+	  <PackageReference Include="System.Text.Json" Version="9.0.3" />
+	</ItemGroup>
+	<PropertyGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
+		<PublishAot>false</PublishAot>
+	</PropertyGroup>
+
+
+</Project>
